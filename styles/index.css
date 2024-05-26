@@ -1,7 +1,7 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: #121212;
-  color: #e0e0e0;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -33,28 +33,34 @@ nav ul li {
 
 nav ul li a {
   color: #ffffff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid transparent; /* Añadir una línea debajo de los enlaces */
+  transition: transform 0.2s; /* Agregar una transición suave */
 }
 
 main {
-  padding: 2em;
+  padding: 2em 0;
   background-color: #1f1b24;
+}
+
+main .content {
+  width: 66.67%; /* Set width to 2/3 of the screen */
+  margin: 0 auto; /* Center the content */
+  padding: 0 2em; /* Additional padding for side margins */
 }
 
 h1,
 h2 {
   color: #ffffff;
+  margin-top: 1.5em; /* Increase the space above headings */
+  margin-bottom: 1em; /* Increase the space below headings */
+  text-align: center; /* Center the headings */
 }
 
 p,
 li,
 th,
 td,
-table caption {
+caption {
   color: #ffffff;
 }
 
@@ -92,13 +98,24 @@ caption {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center the form items */
   max-width: 400px;
-  margin: 1em 0;
+  margin: 2em auto; /* Center the form itself */
+  padding: 1em;
+  border: 2px solid #bb86fc; /* Add a border to differentiate the form */
+  border-radius: 8px; /* Add border radius for smoother corners */
+  background-color: #2d2a32; /* Add a background color to the form */
+}
+
+form h2 {
+  text-align: center; /* Center the form title */
+  color: #bb86fc;
 }
 
 label {
   margin: 0.5em 0 0.2em;
   color: #bb86fc;
+  align-self: flex-start; /* Align labels to the start of the form */
 }
 
 input[type="text"],
@@ -106,8 +123,10 @@ input[type="email"] {
   padding: 0.5em;
   border: 2px solid #03dac6;
   border-radius: 4px;
-  background-color: #2d2a32;
+  background-color: #121212;
   color: #ffffff;
+  width: 100%; /* Make the input fields take the full width of the form */
+  margin-bottom: 1em; /* Add margin below inputs for spacing */
 }
 
 input[type="submit"] {
@@ -118,6 +137,7 @@ input[type="submit"] {
   background-color: #03dac6;
   color: #121212;
   cursor: pointer;
+  width: 100%; /* Make the submit button take the full width of the form */
 }
 
 input[type="submit"]:hover {
