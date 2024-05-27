@@ -1,5 +1,5 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
   color: #ffffff;
   margin: 0;
@@ -56,6 +56,10 @@ h2 {
   text-align: center; /* Center the headings */
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 p,
 li,
 th,
@@ -92,16 +96,15 @@ td {
 caption {
   font-weight: bold;
   margin-bottom: 0.5em;
-  color: #bb86fc;
+  color: white;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center the form items */
-  max-width: 400px;
   margin: 2em auto; /* Center the form itself */
-  padding: 1em;
+  padding: 2.5em;
   border: 2px solid #bb86fc; /* Add a border to differentiate the form */
   border-radius: 8px; /* Add border radius for smoother corners */
   background-color: #2d2a32; /* Add a background color to the form */
@@ -114,14 +117,14 @@ form h2 {
 
 label {
   margin: 0.5em 0 0.2em;
-  color: #bb86fc;
+  color: white;
   align-self: flex-start; /* Align labels to the start of the form */
 }
 
 input[type="text"],
 input[type="email"] {
   padding: 0.5em;
-  border: 2px solid #03dac6;
+  border: 2px solid #bb86fc;
   border-radius: 4px;
   background-color: #121212;
   color: #ffffff;
@@ -134,8 +137,8 @@ input[type="submit"] {
   padding: 0.5em;
   border: none;
   border-radius: 4px;
-  background-color: #03dac6;
-  color: #121212;
+  background-color: #6200ea;
+  color: white;
   cursor: pointer;
   width: 100%; /* Make the submit button take the full width of the form */
 }
